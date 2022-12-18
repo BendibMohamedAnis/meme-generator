@@ -1,16 +1,18 @@
 import data from "./data"
 
 export default function Main_Content(){
-
+    let url;
+    
     function randomIntFromInterval(min, max) { // min and max included 
         return Math.floor(Math.random() * (max - min + 1) + min)
       }
 
     function handleClick(){
-        let i = randomIntFromInterval(1, 9);
-        let da=data[i].meme;
-        let lol=document.getElementById("meme");
-        lol.src=da;
+
+            let i=randomIntFromInterval(0,data.length)
+            url=  data[i].meme
+            document.getElementById("meme").src=url;
+
     }
 
     return(
