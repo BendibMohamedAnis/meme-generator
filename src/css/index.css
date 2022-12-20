@@ -90,7 +90,9 @@ input:focus{
 }
 
 #meme{
-  align-self:center;
-  max-width: auto;
-  max-height: auto;
+width: 300px;
+height: 300px;
+
+ align-self: center;
+
 }

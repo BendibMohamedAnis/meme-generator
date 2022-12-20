@@ -14,15 +14,27 @@ export default function Main_Content(){
       }
 
     function handleClick(){
-            let i=randomIntFromInterval(0,data.length)
             
+
+            let i=randomIntFromInterval(0,data.length)
             setMeme(data[i].meme);
+            
+            const canvas = document.getElementById('meme');
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            let img = new Image(data[i].meme);
+            img.addEventListener("load", ()=>{
+                ctx.drawImage(img,0,0);
+                ctx.font = '50px serif';
+                ctx.fillText('Hello world', 1, 35);
+              });
+            img.src = data[i].meme;
     }
 
     function greeting(name){
         const date= new  Date();
         const hours = date.getHours();
-        let greet="";
+        let greet;
         if(hours<12){
             greet="morning"
         }else{
@@ -32,13 +44,13 @@ export default function Main_Content(){
                 greet="Night";
             }
         }
-        return("Good "+ greet+" " + name + " !");
+        return("Your "+ greet+" " + name + " !");
     }
 
 
     return(
         <div className="main_content" >
-            <span>{greeting("Anis")}</span>
+            <span>{greeting(" Meme")}</span>
             <form method="POST" className="forms">
                     <input type="text"  placeholder="Upper text"/>
                     <input type="text"  placeholder="Bottom text"/>
@@ -47,7 +59,8 @@ export default function Main_Content(){
                 Get new template
                 <img src={require("../assets/doge.png")} alt="icon"/>
             </button>
-            <img src={meme} id="meme" alt="meme"/>
+            
+            <canvas id="meme" width="300" height="300"></canvas>
         </div>
     )
 }
