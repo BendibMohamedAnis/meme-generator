@@ -90,9 +90,13 @@ input:focus{
 }
 
 #meme{
-width: 300px;
-height: 300px;
+
 
  align-self: center;
 
+}
+#greet{
+  font-size: 20px;
+  align-self:center;
+  margin-bottom:35px;
 }

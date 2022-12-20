@@ -24,11 +24,15 @@ export default function Main_Content(){
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             let img = new Image(data[i].meme);
             img.addEventListener("load", ()=>{
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
                 ctx.drawImage(img,0,0);
                 ctx.font = '50px serif';
                 ctx.fillText('Hello world', 1, 35);
               });
             img.src = data[i].meme;
+
+         
+            
     }
 
     function greeting(name){
@@ -50,17 +54,19 @@ export default function Main_Content(){
 
     return(
         <div className="main_content" >
-            <span>{greeting(" Meme")}</span>
+            <span id="greet">{greeting("Meme Lord")}</span>
+
             <form method="POST" className="forms">
                     <input type="text"  placeholder="Upper text"/>
                     <input type="text"  placeholder="Bottom text"/>
             </form>
+
             <button type="button" id="new_meme_btn" onClick={handleClick} >
                 Get new template
                 <img src={require("../assets/doge.png")} alt="icon"/>
             </button>
             
-            <canvas id="meme" width="300" height="300"></canvas>
+            <canvas id="meme" width="100%" height="700px"></canvas>
         </div>
     )
 }

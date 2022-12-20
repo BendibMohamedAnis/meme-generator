@@ -1,154 +1,86 @@
 export default [
     {
       "title": "Angry",
-      "meme": "http://imgur.com/kH6o0mN.png"
+      "meme": "https://memetemplates.in/uploads/1642267848.jpeg"
     },
     {
       "title": "Aww Yeah",
-      "meme": "http://imgur.com/vTSZ6CG.png"
+      "meme": "https://memetemplatehouse.com/wp-content/uploads/2020/07/SpongeBob-mock-face-meme-template.jpeg"
     },
     {
       "title": "Beer Guy",
-      "meme": "http://imgur.com/hGED0m9.png"
+      "meme": "https://memetemplatehouse.com/wp-content/uploads/2020/07/SpongeBob-singing-meme-template.jpeg"
     },
     {
       "title": "Cereal Guy",
-      "meme": "http://imgur.com/SjnMMhd.png"
+      "meme": "https://memetemplatehouse.com/wp-content/uploads/2020/07/SpongeBob-and-squidward-meme-template.jpeg"
     },
     {
       "title": "Cereal Spitting",
-      "meme": "http://imgur.com/rdw32yx.png"
+      "meme": "https://allmemetemplates.files.wordpress.com/2020/07/img_20200526_214427.jpg"
     },
     {
       "title": "Challenge Accepted",
-      "meme": "http://imgur.com/xHcS2LF.png"
+      "meme": "https://i.ytimg.com/vi/IoQxCsD9DYE/mqdefault.jpg"
     },
     {
       "title": "Clean Fuck Yea",
-      "meme": "http://imgur.com/DRd0yKE.png"
+      "meme": "http://getmemetemplates.com/wp-content/uploads/2020/01/20200112_093623-1024x755.jpg"
     },
     {
       "title": "Concentrated",
-      "meme": "http://imgur.com/t9uwvai.png"
+      "meme": "https://a.pinatafarm.com/676x800/a5481162df/tom-and-jerry-swordfight.jpg"
     },
     {
       "title": "Derrrp",
-      "meme": "http://imgur.com/kBSZgbG.png"
+      "meme": "https://memes.co.in/memes/update/uploads/2021/02/20200112_093652-768x565-1.jpg"
     },
     {
       "title": "Determined",
-      "meme": "http://imgur.com/CATjyHj.png"
+      "meme": "https://i.imgflip.com/4/24q21a.jpg"
     },
     {
       "title": "Dude Come On",
-      "meme": "http://imgur.com/8Tkr6ld.png"
+      "meme": "https://i.imgflip.com/361u5f.png"
     },
     {
       "title": "EWBTE",
-      "meme": "http://imgur.com/ZaSaYAK.png"
+      "meme": "https://www.meme-arsenal.com/memes/7f3033d7651eda68cae7b8913d481bdd.jpg"
     },
     {
       "title": "Excited Troll",
-      "meme": "http://imgur.com/CFLPW9U.png"
+      "meme": "https://www.meme-arsenal.com/memes/44693cb71aaa5472a2b3d7a9aa6729a8.jpg"
     },
     {
       "title": "Fap Fap",
-      "meme": "http://imgur.com/NImikb7.png"
+      "meme": "https://i.imgflip.com/3fjnag.jpg"
     },
     {
       "title": "Forever Alone",
-      "meme": "http://imgur.com/4L89AMP.png"
+      "meme": "https://i.imgflip.com/6aysz3.png"
     },
     {
       "title": "Forever Alone Excited",
-      "meme": "http://imgur.com/NyEoz2g.png"
+      "meme": "https://memes.co.in/memes/update/uploads/2021/04/e7f2b28-1-950x500.png"
     },
     {
       "title": "Fuck Yea",
-      "meme": "http://imgur.com/Cq6w7Rd.png"
+      "meme": "https://memes.co.in/memes/update/uploads/2021/04/e7f2b28-1-950x500.png"
     },
     {
       "title": "Fuck Yea Female",
-      "meme": "http://imgur.com/WMgvwaq.png"
+      "meme": "https://a.pinatafarm.com/1080x871/cf683fecdf/unsettled-tom.jpg"
     },
     {
       "title": "Full Panel",
-      "meme": "http://imgur.com/iN5P0r4.png"
+      "meme": "https://i.ytimg.com/vi/o8x5LUfMRZI/maxresdefault.jpg"
     },
     {
       "title": "Happy",
-      "meme": "http://imgur.com/JqhcMU4.png"
+      "meme": "https://i.imgur.com/n10sFaV.jpg"
     },
     {
       "title": "Hehehe",
-      "meme": "http://imgur.com/U9GK6jL.png"
-    },
-    {
-      "title": "Laughing",
-      "meme": "http://imgur.com/wJUtNXR.png"
-    },
-    {
-      "title": "Me Gusta",
-      "meme": "http://imgur.com/6otWkQZ.png"
-    },
-    {
-      "title": "Milk",
-      "meme": "http://imgur.com/bxMhEKZ.png"
-    },
-    {
-      "title": "Newspaper Guy",
-      "meme": "http://imgur.com/MhbPTSQ.png"
-    },
-    {
-      "title": "Okay",
-      "meme": "http://imgur.com/X6niVYQ.png"
-    },
-    {
-      "title": "Original Rage",
-      "meme": "http://imgur.com/CD0nLh8.png"
-    },
-    {
-      "title": "Original Troll",
-      "meme": "http://imgur.com/sV4AReH.png"
-    },
-    {
-      "title": "Poker Face",
-      "meme": "http://imgur.com/EFHsGkJ.png"
-    },
-    {
-      "title": "Prrrr",
-      "meme": "http://imgur.com/gXmsig6.png"
-    },
-    {
-      "title": "Smile",
-      "meme": "http://imgur.com/Bp2y4zT.png"
-    },
-    {
-      "title": "Thoughtful",
-      "meme": "http://imgur.com/HdmBrwX.png"
-    },
-    {
-      "title": "Troll Dad Full",
-      "meme": "http://imgur.com/Mgyz87x.png"
-    },
-    {
-      "title": "Troll Dad Jump",
-      "meme": "http://imgur.com/PFzOfO7.png"
-    },
-    {
-      "title": "Wait A Minute",
-      "meme": "http://imgur.com/rxlv8TX.png"
-    },
-    {
-      "title": "What",
-      "meme": "http://imgur.com/0JmUzko.png"
-    },
-    {
-      "title": "Why With Hands",
-      "meme": "http://imgur.com/gEZW60M.png"
-    },
-    {
-      "title": "YUNO",
-      "meme": "http://imgur.com/uXKy3RJ.png"
+      "meme": "https://www.meme-arsenal.com/memes/bac4938f704e2b749deb631de00a540d.jpg"
     }
   ]
