@@ -2,10 +2,9 @@ import data from "./data"
 import React from "react"
 export default function Main_Content(){
     let url;
-    const [count,setCount]=React.useState(0)
+    const [meme,setMeme]=React.useState("../assets/doge.png")
    
     function add(){
-        setCount(count+1)
         //setCount( function(oldVal){ retrun oldVal+1 }) good practise (oldval given auto at the time of function executed)
         //setCount( prevCount => prevCount + 1)
     }
@@ -16,8 +15,8 @@ export default function Main_Content(){
 
     function handleClick(){
             let i=randomIntFromInterval(0,data.length)
-            url=  data[i].meme
-            document.getElementById("meme").src=url;
+            
+            setMeme(data[i].meme);
     }
 
     function greeting(name){
@@ -44,12 +43,11 @@ export default function Main_Content(){
                     <input type="text"  placeholder="Upper text"/>
                     <input type="text"  placeholder="Bottom text"/>
             </form>
-            <button type="button" id="new_meme_btn" onClick={add} >
+            <button type="button" id="new_meme_btn" onClick={handleClick} >
                 Get new template
                 <img src={require("../assets/doge.png")} alt="icon"/>
             </button>
-            <h2>Count : {count}</h2>
-            <img src="" id="meme" alt="meme"/>
+            <img src={meme} id="meme" alt="meme"/>
         </div>
     )
 }
