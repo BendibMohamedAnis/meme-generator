@@ -91,9 +91,9 @@ input:focus{
 
 #meme{
 
-
  align-self: center;
-
+ height: auto;
+ width: auto;
 }
 #greet{
   font-size: 20px;

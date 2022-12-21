@@ -1,41 +1,79 @@
 import data from "./data"
 import React from "react"
 export default function Main_Content(){
-    let url;
-    const [meme,setMeme]=React.useState("../assets/doge.png")
+    
+    const [upperText,setUpperText]=React.useState("")
+    const [lowerText,setLowerText]=React.useState("")
+    const [meme,setMeme]=React.useState("")
    
-    function add(){
+   
+
+    //function add(){
         //setCount( function(oldVal){ retrun oldVal+1 }) good practise (oldval given auto at the time of function executed)
         //setCount( prevCount => prevCount + 1)
-    }
+    //}
     
     function randomIntFromInterval(min, max) { // min and max included 
         return Math.floor(Math.random() * (max - min + 1) + min)
       }
 
-    function handleClick(){
-            
+      
+    function drawMeme(canvas,ctx,img){
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-            let i=randomIntFromInterval(0,data.length)
-            setMeme(data[i].meme);
-            
-            const canvas = document.getElementById('meme');
-            const ctx = canvas.getContext('2d');
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            let img = new Image(data[i].meme);
-            img.addEventListener("load", ()=>{
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                ctx.drawImage(img,0,0);
-                ctx.font = '50px serif';
-                ctx.fillText('Hello world', 1, 35);
-              });
-            img.src = data[i].meme;
+        const ratio = img.width / img.height;
 
-         
-            
+        // Calculate the width and height of the image to fit the canvas while maintaining the aspect ratio
+        let width = canvas.width;
+        let height = canvas.height;
+        if (ratio > 1) {
+          // Image is wider than the canvas
+          width = canvas.height * ratio;
+        } else {
+          // Image is taller than the canvas
+          height = canvas.width / ratio;
+        }
+        
+        ctx.drawImage(img,0,0,width,height);
+    
+        ctx.fillStyle = 'white';
+
+        const maxTextWidth = width * 0.9; // 90% of the width of the image
+
+        let fontSize = 16;
+
+        let textWidth = ctx.measureText(`${upperText}`).width;
+
+        while (textWidth > maxTextWidth) {
+            fontSize--;
+            ctx.font = `${fontSize}px sans-serif`;
+            textWidth = ctx.measureText(`${upperText}`).width;
+        }
+
+        ctx.fillText(`${upperText}`, (width - textWidth) / 2, fontSize);
+        
     }
 
-    function greeting(name){
+
+
+    function handleClick(){
+            
+            let i=randomIntFromInterval(0,data.length)
+            let canvas= document.getElementById('meme');
+            let ctx=canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            let img = new Image();
+            img.src=data[i].meme;
+            setMeme(img)
+            ctx.font = '16px sans-serif';
+          
+            img.addEventListener("load", ()=>{
+                drawMeme(canvas,ctx,img);
+            });
+                
+    }
+
+    function greeting(){
         const date= new  Date();
         const hours = date.getHours();
         let greet;
@@ -48,16 +86,23 @@ export default function Main_Content(){
                 greet="Night";
             }
         }
-        return("Your "+ greet+" " + name + " !");
+        return("Good "+ greet+" Meme Lord !");
+    }
+
+    function handleChange(value){
+        setUpperText(value);
+        let canvas= document.getElementById('meme');
+        let ctx=canvas.getContext('2d');
+        drawMeme(canvas,ctx,meme);
     }
 
 
     return(
         <div className="main_content" >
-            <span id="greet">{greeting("Meme Lord")}</span>
+            <span id="greet">{greeting()}</span>
 
             <form method="POST" className="forms">
-                    <input type="text"  placeholder="Upper text"/>
+                    <input type="text"  placeholder="Upper text" value={upperText} onChange={(event)=>handleChange(event.target.value)}/>
                     <input type="text"  placeholder="Bottom text"/>
             </form>
 
@@ -66,7 +111,8 @@ export default function Main_Content(){
                 <img src={require("../assets/doge.png")} alt="icon"/>
             </button>
             
-            <canvas id="meme" width="100%" height="700px"></canvas>
+            <canvas id="meme" ></canvas>
+
         </div>
     )
 }

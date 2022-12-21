@@ -6,7 +6,7 @@ export default function Navbar(){
         <div className="navbar">
             <span><img src={require("../assets/logo.png")} alt="logo" id="logo"/></span>
             <span id="title">Meme Generator</span>
-            <span id="description">React Project</span>
+            <span id="description">React Project by Anis</span>
             
         </div>
     )
