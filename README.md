@@ -21,8 +21,8 @@ Meme Generator is a web application built with React that allows you to generate
 - Generate a random meme from our library
 - Mobile-friendly design
 
-## Demo
-You can try the app live at https://your-app-url.com.
+## Demo (NOTICE : The live demo uses an old version that doesn't work , it's just used to show the interface, new version will be pushed soon)
+You can try the app live at https://meme-generator-a9c2a.web.app.
 
 ## Installation and Usage
 To install the app, follow these steps:
